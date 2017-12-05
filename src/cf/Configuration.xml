@@ -124,12 +124,16 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>OscriptLibrary</Subsystem>
+			<Role>ПолныеПрава</Role>
+			<CommonModule>Логгер</CommonModule>
 			<DataProcessor>МенеджерЛогированияЛог</DataProcessor>
 			<DataProcessor>ИсполнительЛог</DataProcessor>
 			<DataProcessor>НастройкиЛогированияЛог</DataProcessor>
 			<DataProcessor>ВыводЛогаВКонсольЛог</DataProcessor>
 			<DataProcessor>ВыводЛогаВФайлЛог</DataProcessor>
 			<DataProcessor>ВыводЛогаВЖРЛог</DataProcessor>
+			<DataProcessor>УстановкаНастроекЛогирования</DataProcessor>
+			<DataProcessor>ДемоОбработка</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

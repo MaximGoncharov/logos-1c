@@ -1,29 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<Subsystem uuid="01360974-bc84-4f3c-a634-558171e1a99f">
+	<DataProcessor uuid="0a51ff38-e5bf-449e-aa56-f0035420762a">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ДемоОбработка" category="Object">
+				<xr:TypeId>4006697d-acd6-41a9-aae9-0dcfff97468b</xr:TypeId>
+				<xr:ValueId>0693032c-18db-4e37-abe4-530339a260fc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ДемоОбработка" category="Manager">
+				<xr:TypeId>8d63aee8-75ad-4cbc-9494-90550d5b3604</xr:TypeId>
+				<xr:ValueId>92ea462c-48ba-4887-84de-2eb527bf2326</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
 		<Properties>
-			<Name>Logos</Name>
+			<Name>ДемоОбработка</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Logos</v8:content>
+					<v8:content>Демо обработка</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>true</IncludeHelpInContents>
-			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ДемоОбработка.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
 			<Explanation/>
-			<Picture/>
-			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МенеджерЛогированияЛог</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИсполнительЛог</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыводЛогаВКонсольЛог</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыводЛогаВФайлЛог</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыводЛогаВЖРЛог</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкиЛогированияЛог</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УстановкаНастроекЛогирования</xr:Item>
-			</Content>
 		</Properties>
-		<ChildObjects/>
-	</Subsystem>
+		<ChildObjects>
+			<Form>Форма</Form>
+		</ChildObjects>
+	</DataProcessor>
 </MetaDataObject>

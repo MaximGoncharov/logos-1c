@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаЛог1" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лог1 (встроен в конфигурацию)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа лог1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаЛог1РасширеннаяПодсказка" id="9"/>
+			<ChildItems>
+				<Button name="ТестируемЛог1" id="1">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ТестируемЛог1</CommandName>
+					<ExtendedTooltip name="ТестируемЛог1РасширеннаяПодсказка" id="2"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЛог2" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лог2 (встроен в конфигурацию)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа лог2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаЛог2РасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<Button name="ТестируемЛог2" id="3">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ТестируемЛог2</CommandName>
+					<ExtendedTooltip name="ТестируемЛог2РасширеннаяПодсказка" id="4"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПроизвольнойЛог" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Произвольной лог</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа произвольной лог</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаПроизвольнойЛогРасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<InputField name="ИмяЛога" id="5">
+					<DataPath>ИмяЛога</DataPath>
+					<ContextMenu name="ИмяЛогаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ИмяЛогаРасширеннаяПодсказка" id="7"/>
+				</InputField>
+				<Button name="ТестируемПроизвольныйЛог" id="14">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ТестируемПроизвольныйЛог</CommandName>
+					<ExtendedTooltip name="ТестируемПроизвольныйЛогРасширеннаяПодсказка" id="15"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЛог3" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лог1 вызывает Лог2 (встроен в конфигурацию)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа лог2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаЛог3РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<Button name="ТестируемЛог3" id="18">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ТестируемЛо1аПотом2Лог2</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лог1 а потом Лог2 вложенный а потом опять Лог1</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ТестируемЛог3РасширеннаяПодсказка" id="19"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДемоОбработка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИмяЛога" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя лога</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ТестируемЛог1" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестируем Лог1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестируем лог1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестируемЛог1</Action>
+		</Command>
+		<Command name="ТестируемЛог2" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестируем Лог2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестируем лог2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестируемЛог2</Action>
+		</Command>
+		<Command name="ТестируемПроизвольныйЛог" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестируем произвольный лог</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестируем произвольный лог</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестируемПроизвольныйЛог</Action>
+		</Command>
+		<Command name="ТестируемЛо1аПотом2Лог2" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестируем ло1а потом2 лог2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестируем ло1а потом2 лог2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестируемЛо1аПотом2Лог2</Action>
+		</Command>
+	</Commands>
+</Form>
