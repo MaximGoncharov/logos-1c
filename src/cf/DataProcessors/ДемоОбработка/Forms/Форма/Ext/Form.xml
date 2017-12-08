@@ -79,7 +79,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Лог1 вызывает Лог2 (встроен в конфигурацию)</v8:content>
+					<v8:content>Лог1 а из него вызывается  Лог2</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -92,14 +92,42 @@
 			<ChildItems>
 				<Button name="ТестируемЛог3" id="18">
 					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ТестируемЛо1аПотом2Лог2</CommandName>
+					<CommandName>Form.Command.ТестируемЛог1Потом2Лог2</CommandName>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Лог1 а потом Лог2 вложенный а потом опять Лог1</v8:content>
+							<v8:content>Лог1 а потом Лог2 вложенный а потом опять Лог1, явная включение иерархического логирования</v8:content>
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="ТестируемЛог3РасширеннаяПодсказка" id="19"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЛог4" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лог1 а из него вызывается  Лог2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа лог2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаЛог4РасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<Button name="ТестируемЛог4" id="22">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ТестируемЛог1аПотом2Лог2_2</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лог1 а потом Лог2 вложенный а потом опять Лог1,  включение иерархического логирования из настроек</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ТестируемЛог4РасширеннаяПодсказка" id="23"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -173,17 +201,32 @@
 			</ToolTip>
 			<Action>ТестируемПроизвольныйЛог</Action>
 		</Command>
-		<Command name="ТестируемЛо1аПотом2Лог2" id="4">
+		<Command name="ТестируемЛог1аПотом2Лог2_2" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тестируем ло1а потом2 лог2</v8:content>
+					<v8:content>Тестируем лог1а потом2 лог2 2</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тестируем ло1а потом2 лог2</v8:content>
+					<v8:content>Тестируем лог1а потом2 лог2 2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестируемЛог1аПотом2Лог2_2</Action>
+		</Command>
+		<Command name="ТестируемЛог1Потом2Лог2" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестируем лог1 потом2 лог2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестируем лог1 потом2 лог2</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ТестируемЛо1аПотом2Лог2</Action>
